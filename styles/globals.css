@@ -2,31 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-center .AchiversDetails {
-  transform: scale(1.2);
-}
-
-.slick-prev,
-.slick-next {
-  display: none !important;
-}
-
-.slick-dots li.slick-active button:before {
-  color: white !important;
-}
-
-.slick-dots li button:before {
-  color: white !important;
-}
-.text-undiscovered-primary {
-  --tw-text-opacity: 1;
-  color: rgb(0 100 92 / var(--tw-text-opacity));
-}
-
-.scroll_width {
-  overflow-x: scroll;
-}
-
 @media (min-width: 1024px) {
   .scroll_width {
     overflow-y: scroll;
@@ -42,405 +17,272 @@
   }
 }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200%;
-  height: 200%;
-  border-radius: 50%;
-  background-color: #dec08c;
-  transition: 500ms ease;
-  z-index: -1;
+/*.hero-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/Ethiopia-Simien-Mountains.jpg');
+  background-size: cover;
+  background-position: center;
 }
-
-.btn .text-2 {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: max-content;
-  color: hsla(40, 12%, 5%, 1);
+.car_rental-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url('../public/car_rental_pictures/car-rental-cover.jpg');
+  background-size: cover;
+  background-position: center;
 }
-
-.btn:is(:hover, :focus-visible)::before { bottom: -50%; }
-
-.btn:is(:hover, :focus-visible) .text-1 { transform: translateY(-40px); }
-
-.btn:is(:hover, :focus-visible) .text-2 {
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.slick-prev:before,
-.slick-next:before {
-  display: hidden;
-}
-
 .about-us-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../public/About/shutterstock-707341174.webp");
-}
-
-.about-us-background {
+    url('../public/entoto.jpg');
   background-size: cover;
-  background-position: 50%;
-}
-
-.animate-bottomToTop {
-  animation: bottomToTop 1s ease forwards;
-}
-
-.animate-bottomToTop.delay-1 {
-  animation-delay: 0.5s;
-}
-
-.animate-bottomToTop {
-  animation: bottomToTop 1s ease forwards;
-}
-
-.home-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home1.jpg");
   background-position: center;
-  background-size: cover;
 }
 
-.home-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home2.jpg");
-  background-position: center;
+.contact-us-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/contactusbackgorund.jpg');
   background-size: cover;
+  background-position: center;
 }
 
-.home-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home3.jpg");
-  background-position: center;
+.travel-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/lalibela-destination.jpg');
   background-size: cover;
+  background-position: center;
 }
 
-.home-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home4.avif");
-  background-position: center;
+.gallery-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url('../public/Eco\ travel\ banner.jpg');
   background-size: cover;
+  background-position: center top;
 }
 
-.home-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home5.jpg");
-  background-position: center;
+.tours-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/Attractions-naturall-endemic-mammals-wolf-overland-ethiopia-tour.jpg');
   background-size: cover;
+  background-position: center;
 }
 
-.home-6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home6.jpg");
-  background-position: center;
+.sustainablity-background {
+  background-image: url('../public/infographic760.png');
+  margin-top: ;
   background-size: cover;
+  background-position: ;
 }
 
-.home-7 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home7.jpeg");
-  background-position: center;
+.ethiopia-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/Attractions-naturall-endemic-mammals-MOUNTAIN-NYALA-overland-ethiopia-tour.jpg');
   background-size: cover;
+  background-position: center;
 }
 
-.home-8 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home8.jpg");
-  background-position: center;
+.destinations-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/Awash-Nat.-Park-Oryx.jpg');
   background-size: cover;
+  background-position: center;
 }
 
-.home-9 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/HomeHero/home9.jpg");
-  background-position: center;
+.historical {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/lalibela.jpg');
+}
+
+.adventure {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/denakil.jpg');
+}
+.trekking {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../public/Simien-Mountains-Ethiopia-563114-1920px-16x7.jpg');
+}
+
+.featured-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('https://nargatour.com/wp-content/uploads/2016/12/North-Ethiopia-destination.jpg');
   background-size: cover;
+  background-position: center;
+}
+
+.featured-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('https://brilliant-ethiopia.imgix.net/Omo-valley-pic-3.jpg?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=580&h=480&q=40');
+  background-size: cover;
+  background-position: center;
+}
+
+.featured-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('https://sa.kapamilya.com/absnews/abscbnnews/media/ancx/travel/2020/01/8africa.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.featured-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/61/02/caption.jpg?w=500&h=400&s=1');
+  background-size: cover;
+  background-position: center;
 }
 
 .tour-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/tana2.jpg");
+    url('https://upload.wikimedia.org/wikipedia/commons/2/27/Blue_Nile_Falls-03%2C_by_CT_Snow.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .tour-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/omo 9.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-9 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/lalibela 3.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/Gheralta1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/coffee 9.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/coffee 1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-7 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/simien 2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-8 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/Gheralta7.jpg");
+    url('../public/Travel\ to\ Omo\ Valley\ Tribes\ Children.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .tour-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/gallery/gallery 10.jpg");
+    url('https://brilliant-ethiopia.imgix.net/Stewart-Mcpherson-Simiens.JPG?auto=format,enhance,compress&fit=crop&crop=entropy,faces,focalpoint&w=1200&h=720&q=50');
   background-size: cover;
   background-position: center;
+}
+
+.tour-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('../public/Attractions-naturall-endemic-mammals-wolf-overland-ethiopia-tour.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.tour-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('https://www.exploriada.com/media/3842/glada-baboon-menz-guassa-trekking.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.tour-6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('https://cloudfront.safaribookings.com/headers/372x186/nechisar.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.tour-7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('https://t4.ftcdn.net/jpg/03/35/02/63/360_F_335026335_bSQm8Kw7t7d8m4PcJmXJWZCAung1LROm.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.tour-8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('https://balemountains.org/wp-content/uploads/2019/10/Sera_James_Irvine_Harenna_forest_Bale_Mountain_Lodge-SMALL-1-1024x713.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.tour-9 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url('https://media-cdn.tripadvisor.com/media/photo-s/18/6e/db/36/hot-spring-with-a-facinating.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .tour-10 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/bale6.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-11 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/gallery/gallery 17.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-13 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/Gheralta7.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-14 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/gallery/addis7.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-15 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/gallery/addis6.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tour-12 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/gallery/gallery 9.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-
-.hotel-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/coffee 3.jpg");
+    url('https://waltainfo.com/wp-content/uploads/2022/01/gonder-scaled.jpg');
   background-position: center;
   background-size: cover;
 }
+*/
 
-.hotel-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/Gheralta7.jpg");
-  background-position: center;
-  background-size: cover;
+/* Base rotation animation */
+@keyframes spin-circle {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+  }
 }
 
-.hotel-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/lalibela 6.JPG");
-  background-position: center;
-  background-size: cover;
+/* Animations for individual circles */
+.animate-spin-circle-0 {
+  animation: spin-circle 10s linear infinite;
 }
 
-.hotel-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/omo 7.jpg");
-  background-position: center;
-  background-size: cover;
+.animate-spin-circle-1 {
+  animation: spin-circle 10s linear infinite;
+  animation-delay: 2s;
 }
 
-.hotel-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/simien 5.jpg");
-  background-position: center;
-  background-size: cover;
+.animate-spin-circle-2 {
+  animation: spin-circle 10s linear infinite;
+  animation-delay: 4s;
 }
 
-.hotel-6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/temp/tana2.jpg");
-  background-position: center;
-  background-size: cover;
+.animate-spin-circle-3 {
+  animation: spin-circle 10s linear infinite;
+  animation-delay: 6s;
 }
 
-.attraction-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/tana2.jpg");
-  background-position: center;
-  background-size: cover;
+.animate-spin-circle-4 {
+  animation: spin-circle 10s linear infinite;
+  animation-delay: 8s;
 }
 
-.attraction-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/temp/axum1.jpg");
-  background-position: center;
-  background-size: cover;
+.background-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(4, 7, 29, 1) 0%,
+    rgba(12, 14, 35, 1) 100%
+  );
 }
 
-.attraction-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/birds6.jpg");
-  background-position: center;
-  background-size: cover;
+.card-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.attraction-4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/photography7.jpg");
-  background-position: center;
-  background-size: cover;
+.card-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.attraction-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/Danakil2.jpg");
-  background-position: center;
-  background-size: cover;
-}
+@layer utilities {
+  .box {
+    position: relative;
+    border: 7px solid transparent;
+    border-radius: 12px;
+    background: linear-gradient(#165248, #165248) padding-box,
+      linear-gradient(var(--angle, 0deg), #070707, #687aff) border-box;
+    animation: rotate-border 8s linear infinite;
+  }
 
-.attraction-6 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/gallery/addis7.jpg");
-  background-position: center;
-  background-size: cover;
-}
+  .box2 {
+    position: relative;
+    border: 7px solid transparent;
+    border-radius: 12px;
+    background: linear-gradient(#94bb3c, #94bb3c) padding-box,
+      linear-gradient(var(--angle, 0deg), #070707, #687aff) border-box;
+    animation: rotate-border 8s linear infinite;
+  }
 
-.attraction-7 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/christanity6.jpg");
-  background-position: center;
-  background-size: cover;
-}
+  @keyframes rotate-border {
+    0% {
+      --angle: 0deg;
+    }
+    100% {
+      --angle: 360deg;
+    }
+  }
 
-.attraction-8 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/muslim1.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-9 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/omo1.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-10 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/lang2.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-11{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/ethiopia/ethiopia 13.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-12{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/Harar5.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-13{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/jimma1.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.attraction-14{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/lalibela 3.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-15{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/simien 8.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-16{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/attraction/lake5.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-17{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/bale6.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.attraction-18{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url("../public/Tours/bale5.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.footer-backgound {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-    url("../public/About/Chebera1.jpg");
-  background-size: cover;
-  background-position: center;
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
 }

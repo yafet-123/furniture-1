@@ -1,35 +1,49 @@
 import React from "react";
 import { MainHeader } from "../components/common/MainHeader";
-import CommonHeroSection from "../components/tours/CommonHeroSection.jsx";
+import Hero from "../components/gallery/Hero.tsx";
 import ImageGrid from "../components/gallery/ImageGrid.jsx";
 
-import ImageThree from "../public/gallery/gallery 1.jpg";
-import ImageFour from "../public/gallery/gallery 2.jpg";
-import ImageFive from "../public/gallery/gallery 3.jpg";
-import ImageSix from "../public/gallery/gallery 4.jpg";
-import ImageSeven from "../public/gallery/gallery 5.jpg";
+import heroImage1 from '../public/hero/gallery/gallery (1).jpg';
+import heroImage2 from '../public/hero/gallery/gallery (25).jpg';
+import heroImage3 from '../public/hero/gallery/gallery (5).jpg';
+import heroImage4 from '../public/hero/gallery/gallery (2).jpg';
+import heroImage5 from '../public/hero/gallery/gallery (6).jpg';
 
 const ImageGallery = () => {
-  const photos = [
+  const HeroImages = [
     {
-      image: ImageThree,
+      id: 1,
+      image: heroImage1,
     },
     {
-      image: ImageFour,
+      id: 2,
+      image: heroImage2,
+    },
+    {
+      id: 3,
+      image: heroImage3,
+    },
+    {
+      id: 4,
+      image: heroImage4,
+    },
+    {
+      id: 5,
+      image: heroImage5,
     },
   ];
   return (
     <React.Fragment>
       <MainHeader title="Pan Ethiopia: Explore Ethiopia's Timeless Beauty with Pan Ethiopia Tours – Your Gateway to Unforgettable Adventures." />
-      <CommonHeroSection
-        photos={photos}
-        Tagline="Explore Ethiopia’s Soul: A Visual Journey Through Its Timeless Beauty"
-        Welcome_Message={`Welcome to PanEthiopia Tours, where every image captures the essence of Ethiopia’s rich heritage and 
-        stunning landscapes. Our gallery invites you to embark on a journey through the heart of Ethiopia, from the ancient 
-        rock-hewn churches of Lalibela to the majestic peaks of the Simien Mountains. Let our collection of images immerse 
-        you in the vibrant cultures and hidden treasures that make Ethiopia a land of endless wonder.`}
-      />
-      <ImageGrid />
+      <div className="bg-[#dedee0]">
+        <Hero
+          title="Elevate Your Living Space"
+          description={`Discover handcrafted furniture that combines comfort with elegance.`}
+          style="lg:flex-row"
+          HeroImages={HeroImages}
+        />
+        <ImageGrid />
+      </div>
     </React.Fragment>
   );
 };

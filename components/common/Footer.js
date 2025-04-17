@@ -24,9 +24,8 @@ export function Footer() {
   ];
 
   const router = useRouter();
-
   return (
-    <footer className="w-full h-full p-5 lg:p-20 footer-backgound">
+    <footer className="w-full h-full p-5 lg:p-20 footer-backgound bg-[#dedee0]">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
           <ul className="flex flex-col justify-center items-center space-y-4 text-white">
@@ -118,7 +117,7 @@ export function Footer() {
 
         <div className="footer-bottom text-white text-xl lg:text-2xl">
           <p className="text-center">
-            ©2024 Pan Ethiopia Tours. All rights reserved.
+            ©2024 Furniture Design. All rights reserved.
             <a 
               href="mailto:yafetaddisu123@gmail.com" 
               target="_blank" 
