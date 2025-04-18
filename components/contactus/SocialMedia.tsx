@@ -53,10 +53,7 @@ export const SocialMedia: React.FC = () => {
     <div className="w-full lg:w-[40%] h-full px-20 py-52 lg:py-0">
       <div className="relative flex items-center justify-center h-full w-full">
         {socialMediaLinks.map((links, index) => (
-          <Link
-            key={index}
-            href={links.path}
-            target="_blank"
+          <div 
             className={`absolute rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
               p-1 hover:scale-110 transition-transform duration-300 ease-in-out animate-spin-circle-${index}`}
             style={{
@@ -65,15 +62,20 @@ export const SocialMedia: React.FC = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-            }}
-          >
-            <div
-              className="rounded-full bg-primaryColor flex items-center justify-center"
-              style={{ width: '100%', height: '100%' }}
+            }}>
+            <Link
+              key={index}
+              href={links.path}
+              target="_blank"       
             >
-              {links.icon}
-            </div>
-          </Link>
+              <div
+                className="rounded-full bg-primaryColor flex items-center justify-center"
+                style={{ width: '100%', height: '100%' }}
+              >
+                {links.icon}
+              </div>
+            </Link>
+          </div>
         ))}
       </div>
     </div>

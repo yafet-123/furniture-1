@@ -199,6 +199,7 @@
 */
 
 /* Base rotation animation */
+
 @keyframes spin-circle {
   0% {
     transform: rotate(0deg) translateX(120px) rotate(0deg);
@@ -285,4 +286,11 @@
     initial-value: 0deg;
     inherits: false;
   }
+}
+
+.footer-backgound {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("../public/footer.jpg");
+  background-size: cover;
+  background-position: center;
 }

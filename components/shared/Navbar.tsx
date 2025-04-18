@@ -1,185 +1,105 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { useEffect, useState, useRef } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import navbarImage from '../../public/logo-02.png';
-import navbarImage1 from '../../public/logo2.png';
-import { IoIosArrowDown } from 'react-icons/io';
+import React, { useEffect, useState, useCallback } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { BsLinkedin, BsInstagram } from "react-icons/bs";
+import logo from "../../public/LOGO_V0.1-01.png";
 
-import useNavbarColorChange from '../../hooks/useNavbarColorChange';
-import useScrollDirection from '../../hooks/useScrollDirection';
-
-export const Navbar: React.FC = () => {
+export const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  // const [toggleDropdown, setToggleDropdown] = useState(false);
+  const [shadow, setShadow] = useState(false);
   const router = useRouter();
-
   const NavLinks = [
-    { path: '/', name: 'HOME' },
-    { path: '/tours', name: 'TOURS' },
-    { path: '/car_rental', name: 'CAR RENTAL' },
-    {
-      path: '/explore',
-      name: 'EXPLORE',
-      dropdown: [
-        { path: '/ethiopia', name: 'ETHIOPIA' },
-        { path: '/destinations', name: 'DESTINATIONS' },
-        { path: '/travel_tips', name: 'TRAVEL TIPS' },
-      ],
-    },
-    { path: '/gallery', name: 'GALLERY' },
-    { path: '/about', name: 'ABOUT' },
-    { path: '/sustainability', name: 'SUSTAINABILITY' },
-    { path: '/contactus', name: 'CONTACT US' },
+    { path: "/", name: "Home" },
+    { path: "/Gallery", name: "Gallery" },
+    { path: "/about", name: "About Us" },
+    { path: "/contact", name: "Contact Us" },
   ];
 
-  const scrollDirection = useScrollDirection();
-  const colorChange = useNavbarColorChange(80);
-
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setIsMenuOpen(false); // Close the dropdown when clicking outside
+    // when it will scrolldown greater than 90 it will have navbar will change it style
+    const handleShadow = () => {
+      if (window.scrollY >= 50) {
+        setShadow(true);
+      } else {
+        setShadow(false);
       }
     };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
+  const closeDropdown = useCallback(() => {
+    setOpen(false);
   }, []);
 
   return (
     <nav
-      className={`${
-        colorChange ? 'md:bg-primaryColor ' : 'md:bg-transparent'
-      } bg-primaryColor w-full lg:h-[100px] top-0 fixed z-40 ${
-        scrollDirection === 'down' ? 'md:-top-28 -top-24' : 'top-0'
-      }`}
+      className={`
+        ${
+          shadow
+            ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white overflow-hidden text-black"
+            : "fixed w-full h-20 z-[100] border-b-2 border-slate-100 text-white "
+        }
+      `}
     >
-      <div className="lg:justify-between justify-around lg:px-4 mx-4 lg:items-center lg:flex lg:py-2">
-        <div className="flex items-center justify-between py-3">
-          <Link href="/" className="">
-            {colorChange ? (
+      <div
+        className={` ${
+          open ? "bg-white fixed w-full" : ""
+        } lg:justify-between justify-around px-2 lg:px-10 items-center lg:flex h-20`}
+      >
+        <div className="flex items-center justify-between py-2">
+          <div className="">
+            <Link href="/">
               <Image
-                src={navbarImage}
-                className="w-[150px] h-[60px]"
-                alt="Navbar"
+                src={logo}
+                className="cursor-pointer hover:scale-105 transition duration-300"
+                alt="Logo"
+                width={80}
+                height={76}
               />
-            ) : (
-              <Image
-                src={navbarImage1}
-                className="w-[150px] h-[60px]"
-                alt="Navbar"
-              />
-            )}
-          </Link>
-          <div className="lg:hidden">
-            <button
-              className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-              onClick={() => setOpen(!open)}
-            >
-              {open ? (
-                <AiOutlineClose color="white" size={30} />
-              ) : (
-                <AiOutlineMenu color="white" size={30} />
-              )}
-            </button>
+            </Link>
+          </div>
+          <div className="flex items-center lg:hidden">
+            <div className="pl-5">
+              <button
+                className={` text-black p-2 rounded-md outline-none focus:border-gray-400 focus:border`}
+                onClick={() => setOpen(!open)}
+              >
+                {open === true ? (
+                  <AiOutlineClose size={35} />
+                ) : (
+                  <AiOutlineMenu size={35} />
+                )}
+              </button>
+            </div>
           </div>
         </div>
 
-        <div>
+        <div className="">
           <div
-            className={`flex-1 lg:justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${
-              open ? 'flex' : 'hidden'
+            className={`flex-1 justify-self-center pb-2 mt-4 lg:block lg:pb-0 lg:mt-0 ${
+              open ? "flex " : "hidden"
             }`}
           >
-            <ul className="items-center justify-between space-y-8 lg:flex lg:space-x-8 lg:space-y-0">
+            <ul
+              className={` ${
+                open ? "text-black" : ""
+              } items-center font-bold paragraph-fonts justify-center space-y-8 lg:flex lg:flex-row flex-col lg:space-x-6 lg:space-y-0`}
+            >
               {NavLinks.map((link) => (
                 <li
                   key={link.name}
-                  className={`relative md:ml-6 font-bold md:my-0 my-7 group`}
+                  className={` md:my-0 my-7 hover:underline cursor-pointer hover:text-[#17c294] ${
+                    router.pathname === link.path
+                      ? "text-[#17c294] text-xl md:text-2xl underline"
+                      : "text-lg md:text-xl"
+                  } `}
                 >
-                  {link.dropdown ? (
-                    <div ref={dropdownRef} className="z-50">
-                      <button
-                        onClick={() => setIsMenuOpen((prev) => !prev)}
-                        className={`text-md font-bold ${
-                          router.pathname === link.path
-                            ? `text-secondaryColor border-b-4 border-secondaryColor ${
-                                colorChange
-                                  ? `text-secondaryColor border-secondaryColor`
-                                  : `text-primaryColor border-primaryColor`
-                              }`
-                            : `text-md font-bold ${
-                                router.pathname === '/sustainablity' ||
-                                !colorChange
-                                  ? 'text-white lg:text-black'
-                                  : 'text-white'
-                              } hover:border-b-4 hover:border-secondaryColor hover:text-secondaryColor`
-                        }`}
-                      >
-                        {link.name}
-                        {link.name === 'EXPLORE' && (
-                          <IoIosArrowDown className="text-2xl ml-2 inline" />
-                        )}
-                      </button>
-                      {isMenuOpen && (
-                        <ul
-                          className={`absolute left-0 mt-2 w-48 bg-[#1A654F] z-50`}
-                        >
-                          {link.dropdown.map((sublink) => (
-                            <li
-                              className={`text-md font-bold hover:bg-gray-200 px-4 py-2 ${
-                                router.pathname === sublink.path
-                                  ? `text-secondaryColor border-b-4 border-secondaryColor ${
-                                      colorChange
-                                        ? `text-secondaryColor border-secondaryColor`
-                                        : `text-primaryColor border-primaryColor`
-                                    }`
-                                  : `text-md font-bold ${
-                                      router.pathname === '/sustainablity' ||
-                                      !colorChange
-                                        ? 'text-white lg:text-black'
-                                        : 'text-white'
-                                    } hover:border-b-4 hover:border-secondaryColor hover:text-secondaryColor`
-                              }`}
-                              onClick={() => setIsMenuOpen(false)}
-                              key={sublink.name}
-                            >
-                              <Link href={sublink.path}>{sublink.name}</Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                  ) : (
-                    <Link
-                      href={link.path}
-                      className={`text-md font-bold ${
-                        router.pathname === link.path
-                          ? `text-secondaryColor border-b-4 border-secondaryColor ${
-                              colorChange
-                                ? `text-secondaryColor border-secondaryColor`
-                                : `text-primaryColor border-primaryColor`
-                            }`
-                          : `text-md font-bold ${
-                              router.pathname === '/sustainablity' ||
-                              !colorChange
-                                ? 'text-white lg:text-black'
-                                : 'text-white'
-                            } hover:border-b-4 hover:border-secondaryColor hover:text-secondaryColor`
-                      }`}
-                    >
-                      {link.name}
-                    </Link>
-                  )}
+                  <Link href={link.path}>
+                    <p onClick={closeDropdown}>{link.name}</p>
+                  </Link>
                 </li>
               ))}
             </ul>
