@@ -46,15 +46,15 @@ export function Footer() {
             </a>
 
             <div className="flex flex-col justify-center items-center">
-              <p className="text-[#dec08c] font-bold mb-2 text-center text-2xl lg:text-4xl">Pan Ethiopia Tours</p>
+              <p className="text-[#dec08c] font-bold mb-2 text-center text-2xl lg:text-4xl">Furniture Design</p>
 
-              <a href="mailto:panethiopian@gmail.com" className="text-center text-[#dec08c] font-semibold mb-2 hover:text-yellow-400">panethiopian@gmail.com</a>
+              <a href="mailto:furnituredesign@gmail.com" className="text-center text-[#dec08c] font-semibold mb-2 hover:text-yellow-400">furnituredesign@gmail.com</a>
 
               <p className="text-xl lg:text-3xl font-bold mb-5 text-[#dec08c] hover:text-yellow-400">Contact Us</p>
 
-              <a href="tel:+251913701838" className="text-[#dec08c] mb-2 hover:text-yellow-400 font-semibold">+251913701838</a>
+              <a href="tel:+251913701838" className="text-[#dec08c] mb-2 hover:text-yellow-400 font-semibold">+251934781038</a>
 
-              <a href="tel:+251911591959" className="text-[#dec08c] mb-2 hover:text-yellow-400 font-semibold">+251911591959</a>
+              <a href="tel:+251911591959" className="text-[#dec08c] mb-2 hover:text-yellow-400 font-semibold">+251924903478</a>
             </div>
 
             <div className="flex justify-center gap-1 mb-8">
@@ -114,7 +114,7 @@ export function Footer() {
 
         <div className="footer-bottom text-white text-xl lg:text-2xl">
           <p className="text-center">
-            ©2024 Pan Ethiopia Tours. All rights reserved.
+            ©2025 Furniture Design. All rights reserved.
             <a 
               href="mailto:yafetaddisu123@gmail.com" 
               target="_blank" 
