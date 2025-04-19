@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
-import logo from "../../public/LOGO_V0.1-01.png";
+import logo from "../../public/logo.png";
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -57,8 +57,8 @@ export const Navbar = () => {
                 src={logo}
                 className="cursor-pointer hover:scale-105 transition duration-300"
                 alt="Logo"
-                width={80}
-                height={76}
+                width={150}
+                height={50}
               />
             </Link>
           </div>

@@ -41,8 +41,9 @@ export default function ContactUs() {
       <MainHeader title="Eco Travel Ethiopia Tours and Car Rental : Contact Us" />
       <div className="bg-[#dedee0]">
         <Hero
-          title="WE LOVE TO HEAR FROM YOU"
-          description={`Contact us today to see how we can help you with your travel management needs.`}
+          title="WE'D LOVE TO HEAR FROM YOU"
+          description={`Get in touch to discover how we can bring your interior vision to life with custom-designed furniture 
+          and tailored solutions.`}
           style="lg:flex-row-reverse"
           HeroImages={HeroImages}
         />

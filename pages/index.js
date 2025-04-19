@@ -34,9 +34,8 @@ export default function Home() {
       <MainHeader title="Pan Ethiopia: Explore Ethiopia's Timeless Beauty with Pan Ethiopia Tours – Your Gateway to Unforgettable Adventures." />
       <div className="bg-[#dedee0]">
         <Hero
-          title="TRUST OUR EXPERIENCE"
-          description={`Eco-Travel Ethiopia Offers You Sustainable and Environmentally
-            Friendly Tours.`}
+          title="TRUST OUR CRAFTSMANSHIP"
+          description={`We bring you timeless, high-quality furniture crafted with precision, creativity, and sustainable materials to elevate your space.`}
           style="lg:flex-row"
           HeroImages={HeroImages}
         />

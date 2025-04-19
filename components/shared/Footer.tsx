@@ -38,9 +38,9 @@ export function Footer() {
           <div className="footer-brand px-5 lg:px-[30px] py-[40px] bg-[#0E0C0B] bg-center bg-repeat" style={{ backgroundImage: "url('/footer-form-bg.png')" }}>
             <a href="#" className="flex justify-center items-center mb-5">
               <Image 
-                src="/LOGO_V0.1-01.png"
+                src="/logo.png"
                 width="160" 
-                height="150" 
+                height="50" 
                 loading="lazy" 
                 alt="grilli home" 
               />

@@ -9,7 +9,7 @@ const Hero = ({
   HeroImages,
 }) => {
   const FollowingTheDreamData = [
-    { id: 1, numbers: '200', title: 'Happy Customers' },
+    { id: 1, numbers: '5', title: 'Happy Customers' },
     { id: 2, numbers: '100', title: 'Team Members' },
   ];
   return (

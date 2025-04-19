@@ -15,7 +15,7 @@ export const ContactUsSeciton: React.FC = () => {
   const ServicesArray: Service[] = [
     {
       title: 'CALL US',
-      secondTitle: '+251927016060',
+      secondTitle: '+251934781038',
       thirdTitle: '',
       icon: <AiFillPhone size={75} color="white" />,
       description:
@@ -24,8 +24,8 @@ export const ContactUsSeciton: React.FC = () => {
     },
     {
       title: 'EMAIL US',
-      secondTitle: 'info@ecotravelethiopia.com',
-      thirdTitle: 'info.ecotravelethiopia@gmail.com',
+      secondTitle: 'info@furnituredesign.com',
+      thirdTitle: 'info.furnituredesign123@gmail.com',
       icon: <AiFillMail size={75} color="white" />,
       description:
         'Send us your questions, feedback, or collaboration requests. We’ll get back to you promptly.',
@@ -34,11 +34,11 @@ export const ContactUsSeciton: React.FC = () => {
     {
       title: 'VISIT US',
       secondTitle:
-        '3rd floor, Guji Mountain Building, CMC Michael, Addis Ababa, Ethiopia.',
+        '3rd floor, Denbel Building, Bole Denbel, Addis Ababa, Ethiopia.',
       thirdTitle: '',
       icon: <ImLocation size={75} color="white" />,
       description:
-        'Stop by our office to discuss your travel plans or learn more about our services in person.',
+        'Stop by our studio to explore our collections, discuss your design needs, or learn more about how we can transform your space.',
       color: 'bg-[#197E52]',
     },
   ];
