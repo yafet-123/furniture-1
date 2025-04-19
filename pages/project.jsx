@@ -1,12 +1,12 @@
-import { MainHeader } from "../components/common/MainHeader";
-import Hero from "../components/home/HeroSection";
+import { MainHeader } from '../components/shared/MainHeader';
+import Hero from '../components/Project/Hero';
 
-import heroImage1 from '../public/hero/home/home (1).jpg';
-import heroImage2 from '../public/hero/home/home (5).jpg';
-import heroImage3 from '../public/hero/home/home (3).jpg';
-import heroImage4 from '../public/hero/home/home (4).jpg';
+import heroImage1 from '../public/hero/Project/project (1).jpg';
+import heroImage2 from '../public/hero/Project/project (2).jpg';
+import heroImage3 from '../public/hero/Project/project (3).jpg';
+import heroImage4 from '../public/hero/Project/project (4).jpg';
 
-export default function Project() {
+export default function ToursPage() {
   const HeroImages = [
     {
       id: 1,
@@ -26,17 +26,16 @@ export default function Project() {
     },
   ];
   return (
-    <div className="">
-      <MainHeader title="Pan Ethiopia: Explore Ethiopia's Timeless Beauty with Pan Ethiopia Tours – Your Gateway to Unforgettable Adventures." />
+    <div className="antialiased bg-gradient-to-r">
+      <MainHeader title="Eco Travel Ethiopia : Our Tours" />
       <div className="bg-[#dedee0]">
         <Hero
-          title="TRUST OUR EXPERIENCE"
-          description={`Eco-Travel Ethiopia Offers You Sustainable and Environmentally
-            Friendly Tours.`}
-          style="lg:flex-row"
+          title="CREATE YOUR TOUR"
+          description={`Thinking of Trekking? Why not do it with ADVENTURE? Plan your trip Today!`}
+          style="lg:flex-row-reverse"
           HeroImages={HeroImages}
         />
-        
+
       </div>
     </div>
   );

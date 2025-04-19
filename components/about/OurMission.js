@@ -15,9 +15,9 @@ export function OurMission() {
           Mission
         </h2>
         <p className="md:text-xl text-lg text-left lg:text-white font-semibold">
-          To provide our clients with an exceptional travel experience by offering high-quality services that showcase the beauty 
-          and diversity of Ethiopia. We aim to be the leading tour company recognized for delivering excellence in travel solutions, 
-          creating unforgettable journeys that enrich the lives of our travelers.
+          Our mission is to design and craft high-quality, functional furniture that blends style with durability. We are 
+          committed to sustainability, creativity, and customer satisfaction—transforming ideas into beautifully curated 
+          spaces, one piece at a time.
         </p>
       </div>
       <div className="md:order-last order-first flex justify-center">

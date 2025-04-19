@@ -27,9 +27,10 @@ export function OurVision() {
           {`Vission`}
         </h2>
         <p className="md:text-xl text-lg text-left lg:text-white font-semibold">
-          {`To be the most trusted and recognized tour company in Ethiopia, known for our commitment to quality, personalized service, 
-          and deep understanding of Ethiopia’s rich cultural heritage and natural wonders. We aspire to connect people from around 
-          the world to the heart of Ethiopia, fostering a deeper appreciation for its unique landscapes and traditions.`}
+          {`To be recognized as a pioneer in innovative and sustainable furniture design—where form meets function and every 
+          piece tells a story. We envision a future where our designs bring warmth, elegance, and personality to living and 
+          working spaces across the globe. Through timeless craftsmanship and a commitment to excellence, we aim to inspire 
+          lifestyles that value beauty, comfort, and conscious living.`}
         </p>
       </div>
     </div>

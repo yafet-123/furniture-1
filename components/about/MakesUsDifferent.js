@@ -10,25 +10,21 @@ export const MakesUsDifferent = () => {
             Our core values drive everything we do
           </h2>
           <li className="md:text-xl text-lg text-left">
-            <span className="font-bold">Personalized Service:</span> {`We tailor every travel experience to meet the unique preferences and interests 
-            of our clients, ensuring that each journey is memorable and meaningful.`}
+            <span className="font-bold">Personalized Design Solutions:</span> {`We work closely with each client to understand their vision, lifestyle, and preferences, delivering furniture and interiors that feel uniquely theirs.`}
           </li>
           <li className="md:text-xl text-lg text-left">
             <span className="font-bold">Attention to Detail:</span>{" "}
-            {`From the moment you start planning your trip to the time you return home, we take care of every detail, allowing you to focus on enjoying the adventure.`}
+            {`From the initial concept to the final finish, we obsess over every element—materials, textures, proportions—to ensure impeccable results.`}
           </li>
           <li className="md:text-xl text-lg text-left">
-            <span className="font-bold">Deep Knowledge of Ethiopia:</span> {`Our team of experts has an in-depth understanding of Ethiopia’s hidden gems, enabling 
-            us to craft itineraries that explore both well-known landmarks and off-the-beaten-path destinations.`}
+            <span className="font-bold">Expert Craftsmanship:</span> {`With deep knowledge of design principles and furniture-making techniques, our team brings years of expertise to each project, blending artistry with precision.`}
           </li>
           <li className="md:text-xl text-lg text-left">
-            <span className="font-bold">Cultural Immersion:</span>{" "}
-            {`We believe that travel is more than just sightseeing; it’s about connecting with the culture, history, and people of the destination. Our tours offer 
-            authentic experiences that allow travelers to engage with Ethiopia’s rich heritage.`}
+            <span className="font-bold">Timeless Aesthetic:</span>{" "}
+            {`We go beyond trends to create designs that feel fresh yet enduring—pieces that hold their charm and function for years to come.`}
           </li>
           <li className="md:text-xl text-lg text-left">
-            <span className="font-bold">Adventure and Exploration:</span> {`Whether it’s trekking in the Simien Mountains or exploring the rock-hewn 
-            churches of Lalibela, our tours are designed to satisfy the spirit of adventure in every traveler.`}
+            <span className="font-bold">Creative Exploration:</span> {`We embrace innovation and experimentation, offering custom designs that reflect individuality, push boundaries, and elevate everyday living.`}
           </li>
         </div>
       </div>

@@ -30,9 +30,9 @@ export default function Bio() {
       <MainHeader title="Pan Ethiopia: Explore Ethiopia's Timeless Beauty with Pan Ethiopia Tours – Your Gateway to Unforgettable Adventures." />
       <div className="bg-[#dedee0]">
         <Hero
-          title="Different People - One Mission"
-          description={`Ecotravel Ethiopia was founded to offer environmentally-friendly tours. Our commitment is as reflected in our 
-          name offering tours with a softer footprint.`}
+          title="Crafting Spaces, Creating Comfort"
+          description={`Experience the perfect blend of form and function with our thoughtfully designed furniture pieces 
+          that transform your living spaces into havens of comfort and style.`}
           style="lg:flex-row-reverse"
           HeroImages={HeroImages}
         />

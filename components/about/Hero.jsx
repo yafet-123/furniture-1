@@ -9,9 +9,8 @@ const Hero = ({
   HeroImages,
 }) => {
   const FollowingTheDreamData = [
-    { id: 1, numbers: '10', title: 'Happy Travelers' },
-    { id: 2, numbers: '200', title: 'Destinations' },
-    { id: 3, numbers: '100', title: 'Team Members' },
+    { id: 1, numbers: '200', title: 'Happy Customers' },
+    { id: 2, numbers: '100', title: 'Team Members' },
   ];
   return (
     <div

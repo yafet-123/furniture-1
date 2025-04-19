@@ -16,9 +16,9 @@ export const OurPromise = () => {
             Our Promise
           </h2>
           <p className="text-base md:text-2xl  mb-8 paragraph-fonts md:px-16">
-            {`At Pan Ethiopia Tours, we promise to make every journey an unforgettable adventure. Whether you are exploring the ancient history, 
-            vibrant culture, or stunning landscapes of Ethiopia, we are dedicated to providing a transformative travel 
-            experience that will leave you with lasting memories and a deep appreciation for this beautiful country.`}
+            {`We promise to create furniture that enhances the way you live, work, and feel in your space. Every piece is 
+            thoughtfully designed and carefully crafted to combine beauty, functionality, and lasting quality. With a focus 
+            on creativity, comfort, and care, our goal is to bring inspiring designs that make every space truly feel like home.`}
           </p>
         </div>
       </div>

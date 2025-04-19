@@ -10,20 +10,19 @@ export const OurValues = () => {
             Our core values drive everything we do
           </h2>
           <li className="md:text-xl text-lg text-left">
-            <span className="font-bold">Excellence:</span> {`We are committed to delivering the highest 
-            standards of service in every aspect of our business.`}
+            <span className="font-bold">Excellence:</span> {`We are dedicated to delivering exceptional design 
+            and quality in every piece of furniture we create.`}
           </li>
           <li className="md:text-xl text-lg text-left">
             <span className="font-bold">Integrity:</span>{" "}
-            {`Honesty and transparency are at the core of our interactions with clients, partners, and communities.`}
+            {`We believe in honest craftsmanship, transparent practices, and genuine relationships with our clients and partners.`}
           </li>
           <li className="md:text-xl text-lg text-left">
-            <span className="font-bold">Sustainability:</span> {`We promote responsible tourism that respects and preserves Ethiopia’s natural 
-            and cultural resources for future generations.`}
+            <span className="font-bold">Sustainability:</span> {`We embrace environmentally responsible materials and processes to ensure our work respects the planet and future generations.`}
           </li>
           <li className="md:text-xl text-lg text-left">
             <span className="font-bold">Passion:</span>{" "}
-            {`Our love for Ethiopia and its treasures drives us to create extraordinary experiences that leave a lasting impact on our travelers.`}
+            {`Our deep love for design and detail drives us to create inspiring, functional, and timeless furniture that enriches everyday living.`}
           </li>
         </div>
       </div>
