@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { TbArrowNarrowRight } from "react-icons/tb";
 
@@ -37,9 +36,9 @@ export default function CatalogueSection() {
     return (
         <div className="grid gap-8 divide-gray-300 lg:divide-x lg:gap-0 lg:grid-cols-4 md:grid-cols-2">
             {items.map((item) => (
-                <div key={item.id} className="relative overflow-hidden group">
+                <div key={item.id} className="relative overflow-hidden group h-[500px]">
                     <div>
-                        <Image src={item.image} width={380} height={100} alt="" className="w-full " />
+                        <Image src={item.image} width={380} height={600} alt="" className="w-full " />
                     </div>
                     <div className="absolute top-0 p-8 m-12 bg-white bg-opacity-60 backdrop-blur">
                         <div className="flex justify-between pb-4 ">

@@ -1,26 +1,85 @@
-import Image from "next/image";
-import { TbArrowUpRight } from "react-icons/tb";
+import Link from 'next/link';
+import Image from 'next/image';
+import { TextGenerateEffect } from '../shared/TextGenerateEffect';
 
-export default function HeroSection() {
-
-    return (
-
-        <div className="bg-zinc-50">
-            <div className="container py-8 text-center lg:py-0 lg:text-left lg:flex lg:justify-between ">
-                <div className="lg:w-1/2 xl:py-14 lg:py-8">
-                    <p className="tracking-widest">OFFER FOR THE BEST INTERIOR</p>
-                    <h1 className="py-4 text-3xl font-extrabold leading-tight text-gray-800 xl:text-6xl lg:text-4xl">An aesthetic room is <br />given harmony</h1>
-                    <p className="pb-6 text-gray-500 xl:pb-10">
-                        Change your view with the best interior design. <br /> We provide the best interior design for your Home. <br />Make every moment beautiful with the best interior design.
-                    </p>
-                    <button className="inline-flex items-center px-8 py-3 text-white rounded-full shadow-lg bg-gray-950 hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2 ">Get Started <TbArrowUpRight className="w-5 h-5 ml-2" /></button>
-                </div>
-
-                <div className="w-1/2">
-                    <Image src="/../../public/image/kitchen.png" width={800} height={500} alt="" className="absolute right-0 xl:h-[448px] xl:w-[700px] lg:h-[344px] lg:w-[500px]  hidden lg:block" />
-                </div>
-
-            </div>
+const Hero = ({
+  title,
+  description,
+  style,
+  HeroImages,
+}) => {
+  return (
+    <div
+      className={`text-white flex flex-col ${style} items-center justify-between w-full h-full lg:h-[45rem] pt-24 mb-5 lg:mb-20`}
+    >
+      <div className="w-full lg:w-1/2 px-5 lg:px-10">
+        <TextGenerateEffect
+          words={title}
+          className="text-left text-[40px] md:text-5xl lg:text-6xl"
+        />
+        <p className="text-black font-semibold text-left md:tracking-wider mb-4 text-lg md:text-xl lg:text-3xl">
+          {description}
+        </p>
+        <div className="flex">
+          <Link href="/tours">
+            <h1
+              className="p-3 border-4 font-bold cursor-pointer text-white text-3xl py-3 hover:border-white hover:text-primaryColor hover:bg-white
+                shadow-sm shadow-white border-white rounded-sm bg-primaryColor hover:scale-110 transition duration-300  items-center justify-center"
+            >
+              See Tours
+            </h1>
+          </Link>
         </div>
-    );
-}
+      </div>
+
+      <div className="flex flex-col w-full h-full px-5 lg:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full h-full">
+          <div className="lg:pr-10 hidden lg:flex flex-col">
+            <div className="w-full h-full lg:h-[15rem] relative mb-5 rounded-2xl overflow-hidden shadow-lg py-5 lg:py-0">
+              <Image
+                className=""
+                alt="why choose us image"
+                src={HeroImages[0].image.src}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+
+            <div className="w-full h-full lg:h-[15rem] relative mb-5 rounded-2xl overflow-hidden shadow-lg py-5 lg:py-0">
+              <Image
+                className=""
+                alt="why choose us image"
+                src={HeroImages[1].image.src}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+
+          <div className="lg:pr-10 flex flex-col py-10">
+            <div className="hidden lg:flex w-full h-[15rem] relative mb-5 rounded-2xl overflow-hidden shadow-lg py-5">
+              <Image
+                className=""
+                alt="why choose us image"
+                src={HeroImages[2].image.src}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="w-full h-[25rem] lg:h-[15rem] relative mb-5 rounded-2xl overflow-hidden shadow-lg py-5">
+              <Image
+                className=""
+                alt="why choose us image"
+                src={HeroImages[3].image.src}
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
