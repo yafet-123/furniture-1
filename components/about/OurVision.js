@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import AboutVisionOne from "../../public/About/Chebera1.jpg";
+import AboutVisionOne from "../../public/image/project3.jpg";
 
 export function OurVision() {
   return (

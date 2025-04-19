@@ -7,7 +7,7 @@ export const OurPromise = () => {
         <Image
           alt="CommunityServiceCommitment Background CommunityServiceCommitment"
           layout="fill"
-          src="/About/Abreha_and_Atsbeha_Church_02.jpg"
+          src="/image/project3.jpg"
         />
       </div>
       <div className="absolute inset-0 flex items-center justify-center mx-4 md:mx-20 lg:mx-72 ">
